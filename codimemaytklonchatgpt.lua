@@ -7,9 +7,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Duration = 3
 })
 
--- Chạy script gốc của Min Gaming
+-- Chạy script PhamNghiaIOS
 local success, err = pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinXoE"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/anhteo94/Hxhxhxjxjxjxh/refs/heads/main/MinXoE"))()
 end)
 
 if not success then
@@ -23,7 +23,7 @@ spawn(function()
     if gui then
         for _, obj in pairs(gui:GetDescendants()) do
             if obj:IsA("TextLabel") and obj.Text:find("Min") then
-                obj.Text = obj.Text:gsub("Min Gaming", "Phạm Nghĩa IOS")
+                obj.Text = obj.Text:gsub("Phạm Nghĩa IOS")
             end
             if obj:IsA("ImageLabel") and obj.Image ~= nil and obj.Image:find("http") then
                 obj.Image = "https://i.imgur.com/JrgPMTO.jpeg" -- ảnh Obito
